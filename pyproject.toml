@@ -1,8 +1,27 @@
 [project]
-name = "repl-nix-workspace"
-version = "0.1.0"
-description = "Add your description here"
-requires-python = ">=3.11"
+name = "shl-assessment-recommendation-engine"
+version = "1.0.0"
+description = "SHL Assessment Recommendation Engine using AI-powered semantic search"
+requires-python = ">=3.11,<3.12"
 dependencies = [
+    "beautifulsoup4",
+    "fastapi",
+    "google-genai>=1.55.0",
+    "pandas",
+    "plotly",
+    "pydantic",
+    "requests",
+    "sentence-transformers",
     "streamlit>=1.52.1",
+    "trafilatura>=2.0.0",
+    "uvicorn",
+    "torch",
 ]
+
+[[tool.uv.index]]
+explicit = true
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
