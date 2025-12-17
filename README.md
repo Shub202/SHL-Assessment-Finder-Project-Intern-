@@ -46,7 +46,7 @@ Streamlit Frontend
 
 📌 Place images inside an assets/ folder in your repo.
 
-Output1.png
+
 
 🎥 Project Video
 
