@@ -1,0 +1,161 @@
+🎯 SHL Assessment Finder
+AI-Powered Assessment Recommendation System
+
+An end-to-end AI system that scrapes, understands, and recommends SHL assessments using semantic search, embeddings, and LLM-assisted query understanding, delivered through a FastAPI backend and a Streamlit frontend.
+
+🚀 Live Demo
+🔗 https://shl-assessment-finder.streamlit.app
+
+📌 Features
+🔎 Natural-language job requirement search
+
+🧠 Semantic search using Sentence Transformers
+
+🤖 LLM-assisted query understanding (Gemini / RAG ready)
+
+🧪 SHL catalog scraping & parsing pipeline
+
+⚡ FastAPI backend with JSON API
+
+🎨 Polished Streamlit UI with cards, charts & filters
+
+📊 Insights: test-type distribution & duration analysis
+
+🧠 Architecture Overview
+
+SHL Website
+   ↓ (Scraping & Parsing)
+Assessment Catalog (CSV / DataFrame)
+   ↓
+Sentence Transformer Embeddings
+   ↓
+Similarity Search + LLM Query Understanding
+   ↓
+FastAPI Recommendation API
+   ↓
+Streamlit Frontend
+
+
+🖥️ Web App Screenshots
+🔹 Main Dashboard
+
+🔹 Assessment Recommendations
+
+🔹 Insights & Charts
+
+📌 Place images inside an assets/ folder in your repo.
+
+🎥 Project Video
+
+
+⚙️ Tech Stack
+Layer	Technology
+Frontend	Streamlit
+Backend	FastAPI
+Embeddings	sentence-transformers (MiniLM)
+LLM	Gemini / RAG (optional)
+Scraping	BeautifulSoup, Trafilatura
+Visualization	Plotly
+Deployment	Streamlit Cloud
+
+📡 API Endpoints
+🔹 Health Check
+GET /health
+🔹 Get Recommendations
+POST /recommend
+Request Body
+
+{
+  "query": "Data Analyst with SQL skills",
+  "top_k": 5,
+  "max_duration": 60,
+  "remote_only": true
+}
+Response
+
+{
+  "total_found": 5,
+  "recommendations": [
+    {
+      "Assessment Name": "Data Analyst Screening",
+      "Duration": 45,
+      "Test Type": "Cognitive",
+      "Skills": "SQL",
+      "Relevance Score": 46.9,
+      "URL": "https://shl.com/assessment/3"
+    }
+  ]
+}
+🧪 Evaluation Methodology
+
+Embedding Similarity Scores for ranking relevance
+
+Top-K Precision Review
+
+Manual Validation against SHL categories
+
+Duration & Skill Match Constraints
+
+Future improvements:
+
+Ground-truth labels
+
+NDCG / MAP metrics
+
+Human-in-the-loop evaluation
+
+🛠️ Local Setup
+1️⃣ Clone Repository
+
+cd SHL-Assessment-Finder
+2️⃣ Create Virtual Environment
+python -m venv .venv
+.venv\Scripts\activate
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+4️⃣ Run FastAPI Backend
+uvicorn main:app --reload
+API runs at:
+http://localhost:8000
+5️⃣ Run Streamlit Frontend
+streamlit run streamlit_app.py
+App runs at:
+http://localhost:8501
+
+Repo: SHL-Assessment-Finder
+
+Main file: streamlit_app.py
+
+📂 Repository Structure
+├── streamlit_app.py
+├── main.py
+├── query_functions.py
+├── requirements.txt
+├── assets/
+│   ├── dashboard.png
+│   ├── results.png
+│   └── insights.png
+├── README.md
+
+
+👤 Author
+
+Shubham Kumar
+
+🔗 GitHub: https://github.com/Shub202
+
+
+✅ Submission Checklist
+
+✔️ Web app URL
+
+✔️ API endpoint
+
+✔️ GitHub code
+
+✔️ Evaluation included
+
+✔️ README + screenshots + video
+
+✔️ Production-ready UI
+
