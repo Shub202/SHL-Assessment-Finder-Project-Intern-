@@ -181,14 +181,26 @@ INFO:     127.0.0.1:64459 - "POST /recommend HTTP/1.1" 200 OK
 Main file: streamlit_app.py
 
 📂 Repository Structure
+
 ├── streamlit_app.py
+
 ├── main.py
+
 ├── query_functions.py
+
+
 ├── requirements.txt
+
+
 ├── assets/
+
 │   ├── dashboard.png
+
 │   ├── results.png
+
 │   └── insights.png
+
+
 ├── README.md
 
 
