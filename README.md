@@ -176,7 +176,7 @@ INFO:     127.0.0.1:64459 - "POST /recommend HTTP/1.1" 200 OK
   ## URL: http://127.0.0.1:8501
 
 
-## Repo: SHL-Assessment-Finder
+## Repo link : https://github.com/Shub202/SHL-Assessment-Finder-Project-Intern-.git
 
 Main file: streamlit_app.py
 
@@ -196,7 +196,7 @@ Main file: streamlit_app.py
 
 Shubham Kumar
 
-🔗 GitHub: https://github.com/Shub202
+# 🔗 GitHub: https://github.com/Shub202
 
 
 ✅ Submission Checklist
