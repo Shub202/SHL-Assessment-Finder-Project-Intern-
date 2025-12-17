@@ -1,10 +1,10 @@
-🎯 SHL Assessment Finder
-AI-Powered Assessment Recommendation System
+## 🎯 SHL Assessment Finder
+## AI-Powered Assessment Recommendation System
 
-An end-to-end AI system that scrapes, understands, and recommends SHL assessments using semantic search, embeddings, and LLM-assisted query understanding, delivered through a FastAPI backend and a Streamlit frontend.
+## An end-to-end AI system that scrapes, understands, and recommends SHL assessments using semantic search, embeddings, and LLM-assisted query understanding, delivered through a FastAPI backend and a Streamlit frontend.
 
-🚀 Live Demo
-🔗 https://nonalgebraical-tesha-multiplicational.ngrok-free.dev/
+# 🚀 Live Demo
+# 🔗 https://nonalgebraical-tesha-multiplicational.ngrok-free.dev/
 
 📌 Features
 🔎 Natural-language job requirement search
@@ -128,39 +128,55 @@ Human-in-the-loop evaluation
 cd SHL-Assessment-Finder
 
 2️⃣ Create Virtual Environment
-python -m venv .venv
-.venv\Scripts\activate
+## python -m venv .venv
+## .venv\Scripts\activate
 
 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
 4️⃣ Run FastAPI Backend
+
 (.venv) PS E:\Assessment-Engine> uvicorn main:app --reload
+
+>>
 >>
 INFO:     Will watch for changes in these directories:
-INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+
+## INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+
 INFO:     Started reloader process [25368] using StatReload
+
 INFO:     Started server process [18224]
+
 INFO:     Waiting for application startup.
+
 INFO:     Application startup complete.
+
 INFO:     127.0.0.1:51878 - "GET / HTTP/1.1" 200 OK
+
 INFO:     127.0.0.1:57656 - "POST /recommend HTTP/1.1" 200 OK
+
 INFO:     127.0.0.1:60770 - "POST /recommend HTTP/1.1" 200 OK
+
 INFO:     127.0.0.1:64459 - "POST /recommend HTTP/1.1" 200 OK
 
 
 5️⃣ Run Streamlit Frontend
+
 (.venv) PS E:\Assessment-Engine> cd E:\Assessment-Engine
+
 >> .venv\Scripts\activate
->> streamlit run streamlit_app.py --server.port 8501 --server.address 127.0.0.1
+
+## >> streamlit run streamlit_app.py --server.port 8501 --server.address 127.0.0.1
+
 >> 
 
   You can now view your Streamlit app in your browser.
 
-  URL: http://127.0.0.1:8501
+  ## URL: http://127.0.0.1:8501
 
 
-Repo: SHL-Assessment-Finder
+## Repo: SHL-Assessment-Finder
 
 Main file: streamlit_app.py
 
