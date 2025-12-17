@@ -4,7 +4,7 @@ AI-Powered Assessment Recommendation System
 An end-to-end AI system that scrapes, understands, and recommends SHL assessments using semantic search, embeddings, and LLM-assisted query understanding, delivered through a FastAPI backend and a Streamlit frontend.
 
 🚀 Live Demo
-🔗 https://shl-assessment-finder.streamlit.app
+🔗 https://nonalgebraical-tesha-multiplicational.ngrok-free.dev/
 
 📌 Features
 🔎 Natural-language job requirement search
@@ -50,32 +50,48 @@ Streamlit Frontend
 
 ⚙️ Tech Stack
 Layer	Technology
+
 Frontend	Streamlit
+
 Backend	FastAPI
+
 Embeddings	sentence-transformers (MiniLM)
+
 LLM	Gemini / RAG (optional)
+
 Scraping	BeautifulSoup, Trafilatura
+
 Visualization	Plotly
+
 Deployment	Streamlit Cloud
 
 📡 API Endpoints
+
 🔹 Health Check
 GET /health
+
 🔹 Get Recommendations
 POST /recommend
+
 Request Body
 
 {
   "query": "Data Analyst with SQL skills",
+  
   "top_k": 5,
+  
   "max_duration": 60,
+  
   "remote_only": true
 }
+
 Response
 
 {
   "total_found": 5,
+  
   "recommendations": [
+  
     {
       "Assessment Name": "Data Analyst Screening",
       "Duration": 45,
@@ -86,6 +102,8 @@ Response
     }
   ]
 }
+
+
 🧪 Evaluation Methodology
 
 Embedding Similarity Scores for ranking relevance
@@ -105,18 +123,22 @@ NDCG / MAP metrics
 Human-in-the-loop evaluation
 
 🛠️ Local Setup
-1️⃣ Clone Repository
 
+1️⃣ Clone Repository
 cd SHL-Assessment-Finder
+
 2️⃣ Create Virtual Environment
 python -m venv .venv
 .venv\Scripts\activate
+
 3️⃣ Install Dependencies
 pip install -r requirements.txt
+
 4️⃣ Run FastAPI Backend
 uvicorn main:app --reload
 API runs at:
 http://localhost:8000
+
 5️⃣ Run Streamlit Frontend
 streamlit run streamlit_app.py
 App runs at:
